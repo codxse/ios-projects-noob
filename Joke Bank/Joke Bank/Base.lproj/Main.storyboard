@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6jX-jz-Bbg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke Bank 🤣-->
+        <scene sceneID="y3W-WD-7M8">
+            <objects>
+                <tableViewController id="Bkf-0j-RO1" customClass="JokeTableViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D3y-I7-p0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6H7-PA-XPM">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6H7-PA-XPM" id="s5h-S5-dWg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Bkf-0j-RO1" id="cQe-zJ-D86"/>
+                            <outlet property="delegate" destination="Bkf-0j-RO1" id="Azq-k1-35A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Joke Bank 🤣" id="qJ8-UN-cwl">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="x7m-0v-kfY"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Asb-DE-Ovn" kind="show" identifier="routeToJokeDefinition" id="tIa-In-3IO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oX-Cx-LK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="77.678571428571431"/>
+        </scene>
+        <!--Joke Definition View Controller-->
+        <scene sceneID="Yam-10-0vb">
+            <objects>
+                <viewController id="Asb-DE-Ovn" customClass="JokeDefinitionViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPb-Dj-4SM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jokes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5t-e5-bLW">
+                                <rect key="frame" x="184.5" y="438" width="45" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z5t-e5-bLW" firstAttribute="centerY" secondItem="JPb-Dj-4SM" secondAttribute="centerY" id="NrG-oM-dYG"/>
+                            <constraint firstItem="z5t-e5-bLW" firstAttribute="centerX" secondItem="JPb-Dj-4SM" secondAttribute="centerX" id="bca-Ga-7oJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FyY-1n-24q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OnM-Ew-ffr"/>
+                    <connections>
+                        <outlet property="jokeDefinition" destination="z5t-e5-bLW" id="21k-w0-UEA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IM4-KH-Bqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="neG-DX-Sho">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jX-jz-Bbg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bLa-ze-Xqw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bkf-0j-RO1" kind="relationship" relationship="rootViewController" id="GoC-OV-vnq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uz9-c6-7p9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.376811594202906" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+</document>

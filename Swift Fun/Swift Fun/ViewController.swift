@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var counter: UILabel!
     
+    @IBOutlet weak var totalA: UITextField!
+    
+    @IBOutlet weak var totalB: UITextField!
+    
     var initial = 1
     
     override func viewDidLoad() {
@@ -31,6 +35,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func increment(_ sender: Any) {
+        
+        print(totalA.text!)
+        
+        print(totalB.text)
+        
         initial = initial + 1
         counter.text = String(initial);
         
