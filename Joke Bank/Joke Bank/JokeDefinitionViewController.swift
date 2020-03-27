@@ -13,29 +13,12 @@ class JokeDefinitionViewController: UIViewController {
     
     @IBOutlet weak var jokeDefinition: UILabel!
     
-    var joke = ""
-    
-    let jokesDefinition = ["Q: Siapa Nadiar?\nA: Nadiar adalah Mazter Mizter", "Q: ios?\nA: Apple", "Q: Android?\nA: Garbage", "Q: Windows?\nA: Jabaja"]
+    var joke: Joke = Joke()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = joke
-        // Do any additional setup after loading the view.
-        if (joke == "nadiar") {
-            jokeDefinition.text = jokesDefinition[0]
-        }
-        
-        if (joke == "android") {
-            jokeDefinition.text = jokesDefinition[1]
-        }
-        
-        if (joke == "ios") {
-            jokeDefinition.text = jokesDefinition[2]
-        }
-        
-        if (joke == "windows") {
-            jokeDefinition.text = jokesDefinition[3]
-        }
+        title = joke.title
+        jokeDefinition.text = joke.text
     }
     
 

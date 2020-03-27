@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272C4B32242E124300A2B863 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C4B31242E124300A2B863 /* Joke.swift */; };
 		27F4A12C242BC63800285DF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4A12B242BC63800285DF0 /* AppDelegate.swift */; };
 		27F4A12E242BC63800285DF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4A12D242BC63800285DF0 /* SceneDelegate.swift */; };
 		27F4A133242BC63800285DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A131242BC63800285DF0 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272C4B31242E124300A2B863 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		27F4A128242BC63800285DF0 /* Joke Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F4A12B242BC63800285DF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F4A12D242BC63800285DF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				27F4A12D242BC63800285DF0 /* SceneDelegate.swift */,
 				27F4A141242BC72900285DF0 /* JokeDefinitionViewController.swift */,
 				27F4A13F242BC6AE00285DF0 /* JokeTableViewController.swift */,
+				272C4B31242E124300A2B863 /* Joke.swift */,
 				27F4A131242BC63800285DF0 /* Main.storyboard */,
 				27F4A134242BC63900285DF0 /* Assets.xcassets */,
 				27F4A136242BC63900285DF0 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F4A12C242BC63800285DF0 /* AppDelegate.swift in Sources */,
+				272C4B32242E124300A2B863 /* Joke.swift in Sources */,
 				27F4A12E242BC63800285DF0 /* SceneDelegate.swift in Sources */,
 				27F4A142242BC72900285DF0 /* JokeDefinitionViewController.swift in Sources */,
 				27F4A140242BC6AE00285DF0 /* JokeTableViewController.swift in Sources */,

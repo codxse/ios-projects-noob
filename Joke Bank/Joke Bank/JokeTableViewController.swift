@@ -10,11 +10,31 @@ import UIKit
 
 class JokeTableViewController: UITableViewController {
     
-    let jokes = ["nadiar", "ios", "android", "windows"]
+    var jokes: [Joke] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let joke1 = Joke()
+        joke1.title = "nadiar"
+        joke1.text = "Q: Siapa Nadiar?\nA: Nadiar adalah Mazter Mizter"
+        
+        let joke2 = Joke()
+        joke2.title = "ios"
+        joke2.text = "Q: ios?\nA: Apple"
+        
+        let joke3 = Joke()
+        joke3.title = "android"
+        joke3.text = "Q: Android?\nA: Garbage"
+        
+        let joke4 = Joke()
+        joke4.title = "windows"
+        joke4.text = "Q: Windows?\nA: Jabaja"
 
+        jokes.append(joke1)
+        jokes.append(joke2)
+        jokes.append(joke3)
+        jokes.append(joke4)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,7 +61,7 @@ class JokeTableViewController: UITableViewController {
         let cell = UITableViewCell()
 
         // Configure the cell...
-        cell.textLabel?.text = jokes[indexPath.row];
+        cell.textLabel?.text = jokes[indexPath.row].title;
 
         return cell
     }
@@ -56,7 +76,7 @@ class JokeTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let jokeVC = segue.destination as? JokeDefinitionViewController {
             
-            if let selectedJoke = sender as? String {
+            if let selectedJoke = sender as? Joke {
                 jokeVC.joke = selectedJoke
             }
         }
