@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class InputTodoViewController: UIViewController {
 
@@ -22,13 +23,22 @@ class InputTodoViewController: UIViewController {
     }
     
     @IBAction func addTap(_ sender: Any) {
-        let t = Todo()
-        t.isImportant = todoSwitcher.isOn
-        if let n = todoTextInput.text {
-            t.name = n
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let t = ToDoEntity(context: context)
+            
+            // let t = Todo()
+            t.isImportant = todoSwitcher.isOn
+            if let n = todoTextInput.text {
+                t.name = n
+            }
+            
+            print(t);
+            
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
         }
-        todoTableVC?.todos.append(t)
-        todoTableVC?.tableView.reloadData()
+        
+        // todoTableVC?.todos.append(t)
+        // todoTableVC?.tableView.reloadData()
         navigationController?.popViewController(animated: true)
     }
     

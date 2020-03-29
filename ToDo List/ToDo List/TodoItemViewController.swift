@@ -10,16 +10,24 @@ import UIKit
 
 class TodoItemViewController: UIViewController {
 
-    var todo: Todo = Todo()
+    var todo: ToDoEntity? = nil
     
     @IBOutlet weak var todoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        todoLabel.text = todo.name
+        todoLabel.text = todo?.name ?? "NA"
         // Do any additional setup after loading the view.
     }
     
     @IBAction func tapComplete(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let todo2 = todo {
+                context.delete(todo2)
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        }
+        
+        navigationController?.popViewController(animated: true)
     }
     
     /*

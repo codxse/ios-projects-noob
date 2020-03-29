@@ -10,8 +10,10 @@ import UIKit
 
 class TodoTableViewController: UITableViewController {
 
-    var todos : [Todo] = []
+    // var todos : [Todo] = []
+    var todos : [ToDoEntity] = []
     
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +40,8 @@ class TodoTableViewController: UITableViewController {
         todos.append(todo3)
     }
 
+    */
+    
     // MARK: - Table view data source
 
     /*
@@ -46,6 +50,21 @@ class TodoTableViewController: UITableViewController {
         return 1
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getTodos();
+    }
+    
+    func getTodos() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let toDosFromCD = try? context.fetch(ToDoEntity.fetchRequest()) {
+                if let toDos = toDosFromCD as? [ToDoEntity] {
+                    todos = toDos
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -57,7 +76,9 @@ class TodoTableViewController: UITableViewController {
         let cell = UITableViewCell()
 
         if todos[indexPath.row].isImportant {
-            cell.textLabel?.text = "🍌 " + todos[indexPath.row].name
+            if let myTask = todos[indexPath.row].name {
+                cell.textLabel?.text = "🍌 " + myTask
+            }
         } else {
             cell.textLabel?.text = todos[indexPath.row].name
         }
@@ -72,7 +93,7 @@ class TodoTableViewController: UITableViewController {
         }
         
         if let completeVC = segue.destination as? TodoItemViewController {
-            if let selectedTodo = sender as? Todo {
+            if let selectedTodo = sender as? ToDoEntity {
                 completeVC.todo = selectedTodo
             }
         }
