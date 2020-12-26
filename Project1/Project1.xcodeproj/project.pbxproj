@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277622CE2596B77E0098202E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277622CD2596B77E0098202E /* DetailViewController.swift */; };
+		277622DA2596CBD80098202E /* animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D22596CBD70098202E /* animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg */; };
+		277622DB2596CBD80098202E /* animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D32596CBD70098202E /* animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg */; };
+		277622DC2596CBD80098202E /* animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D42596CBD70098202E /* animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg */; };
+		277622DD2596CBD80098202E /* animal_ningyu-he-K22SK31G-QM-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D52596CBD80098202E /* animal_ningyu-he-K22SK31G-QM-unsplash.jpg */; };
+		277622DE2596CBD80098202E /* animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D62596CBD80098202E /* animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg */; };
+		277622DF2596CBD80098202E /* animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D72596CBD80098202E /* animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg */; };
+		277622E02596CBD80098202E /* animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D82596CBD80098202E /* animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg */; };
+		277622E12596CBD80098202E /* animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 277622D92596CBD80098202E /* animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg */; };
 		27E3341625957AA800BB0520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3341525957AA800BB0520 /* AppDelegate.swift */; };
 		27E3341825957AA800BB0520 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3341725957AA800BB0520 /* SceneDelegate.swift */; };
 		27E3341A25957AA800BB0520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3341925957AA800BB0520 /* ViewController.swift */; };
@@ -26,6 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277622CD2596B77E0098202E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		277622D22596CBD70098202E /* animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg"; sourceTree = "<group>"; };
+		277622D32596CBD70098202E /* animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D42596CBD70098202E /* animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D52596CBD80098202E /* animal_ningyu-he-K22SK31G-QM-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_ningyu-he-K22SK31G-QM-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D62596CBD80098202E /* animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D72596CBD80098202E /* animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D82596CBD80098202E /* animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg"; sourceTree = "<group>"; };
+		277622D92596CBD80098202E /* animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg"; sourceTree = "<group>"; };
 		27E3341225957AA800BB0520 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E3341525957AA800BB0520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E3341725957AA800BB0520 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +97,7 @@
 				27E3341525957AA800BB0520 /* AppDelegate.swift */,
 				27E3341725957AA800BB0520 /* SceneDelegate.swift */,
 				27E3341925957AA800BB0520 /* ViewController.swift */,
+				277622CD2596B77E0098202E /* DetailViewController.swift */,
 				27E3341B25957AA800BB0520 /* Main.storyboard */,
 				27E3341E25957AAA00BB0520 /* Assets.xcassets */,
 				27E3342025957AAA00BB0520 /* LaunchScreen.storyboard */,
@@ -91,6 +110,14 @@
 		27E3342A25957D4300BB0520 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				277622D42596CBD70098202E /* animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg */,
+				277622D32596CBD70098202E /* animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg */,
+				277622D22596CBD70098202E /* animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg */,
+				277622D82596CBD80098202E /* animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg */,
+				277622D72596CBD80098202E /* animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg */,
+				277622D52596CBD80098202E /* animal_ningyu-he-K22SK31G-QM-unsplash.jpg */,
+				277622D92596CBD80098202E /* animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg */,
+				277622D62596CBD80098202E /* animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg */,
 				27E3342B25957D4300BB0520 /* nssl0049.jpg */,
 				27E3342C25957D4300BB0520 /* nssl0046.jpg */,
 				27E3342D25957D4300BB0520 /* nssl0091.jpg */,
@@ -163,15 +190,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E3343625957D4300BB0520 /* nssl0046.jpg in Resources */,
+				277622E02596CBD80098202E /* animal_joshua-j-cotten-e8t9o3eJ36o-unsplash.jpg in Resources */,
 				27E3343D25957D4300BB0520 /* nssl0033.jpg in Resources */,
 				27E3343925957D4300BB0520 /* nssl0051.jpg in Resources */,
+				277622DC2596CBD80098202E /* animal_axel-blanchard-rwkVtFiiAGI-unsplash.jpg in Resources */,
+				277622DD2596CBD80098202E /* animal_ningyu-he-K22SK31G-QM-unsplash.jpg in Resources */,
 				27E3343725957D4300BB0520 /* nssl0091.jpg in Resources */,
 				27E3343C25957D4300BB0520 /* nssl0043.jpg in Resources */,
 				27E3343E25957D4300BB0520 /* nssl0034.jpg in Resources */,
+				277622DE2596CBD80098202E /* animal_sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg in Resources */,
+				277622DF2596CBD80098202E /* animal_nicolas-dc-DfPgOyU_VUE-unsplash.jpg in Resources */,
 				27E3343525957D4300BB0520 /* nssl0049.jpg in Resources */,
+				277622DB2596CBD80098202E /* animal_jay-wennington-s-fD5Tpew2k-unsplash.jpg in Resources */,
 				27E3343A25957D4300BB0520 /* nssl0041.jpg in Resources */,
 				27E3343B25957D4300BB0520 /* nssl0042.jpg in Resources */,
 				27E3342225957AAA00BB0520 /* LaunchScreen.storyboard in Resources */,
+				277622E12596CBD80098202E /* animal_ningyu-he-QbRbkNM4-kk-unsplash.jpg in Resources */,
+				277622DA2596CBD80098202E /* animal_jon-tyson-qg4V3HtAEhU-unsplash (1).jpg in Resources */,
 				27E3341F25957AAA00BB0520 /* Assets.xcassets in Resources */,
 				27E3343825957D4300BB0520 /* nssl0045.jpg in Resources */,
 				27E3341D25957AA800BB0520 /* Main.storyboard in Resources */,
@@ -188,6 +223,7 @@
 				27E3341A25957AA800BB0520 /* ViewController.swift in Sources */,
 				27E3341625957AA800BB0520 /* AppDelegate.swift in Sources */,
 				27E3341825957AA800BB0520 /* SceneDelegate.swift in Sources */,
+				277622CE2596B77E0098202E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
