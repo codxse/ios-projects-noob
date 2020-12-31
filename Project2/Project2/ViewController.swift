@@ -70,6 +70,11 @@ class ViewController: UIViewController {
         
         let ac = UIAlertController(title: title, message: "Your scrore is \(score)", preferredStyle: .alert)
         
+        ac.addAction(UIAlertAction(title: "Share", style: .default) {_ in
+            let _vc = UIActivityViewController(activityItems: ["My score \(self.score)"], applicationActivities: [])
+            self.present(_vc, animated: true)
+        })
+        
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         
         present(ac, animated: true)
